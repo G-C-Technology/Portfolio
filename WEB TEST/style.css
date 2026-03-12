@@ -1,0 +1,115 @@
+/* Configuración de colores y fuentes */
+:root {
+    --fondo: #ffffff;
+    --texto: #1a1a1a;
+    --acento: #0070f3;
+    --suave: #666666;
+}
+
+body.dark-mode {
+    --fondo: #121212;
+    --texto: #f0f0f0;
+    --acento: #3291ff;
+    --suave: #a0a0a0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+    margin: 0;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    padding: 40px;
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    text-align: center;
+    justify-content: center; /* Esta propiedad no es necesaria aquí, ya que justify-content se aplica a contenedores flexibles */
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -1px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: var(--suave);
+    margin-bottom: 30px;
+}
+
+.enlaces {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--acento);
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* Línea decorativa minimalista */
+.separador {
+    width: 50px;
+    height: 2px;
+    background-color: var(--texto);
+    margin: 20px auto;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid var(--texto);
+    padding: 10px 10px;
+    cursor: pointer;
+    color: var(--texto);
+    background-color: transparent;
+}
+
+button:hover{
+    background-color: var(--acento);
+    color: var(--fondo);
+    border: 1px solid var(--texto);
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo para el botón del switch */
+.boton-modo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: 1px solid var(--texto);
+    background: transparent;
+    color: var(--fondo);
+    border-radius: 20px;
+}
+
+.menu-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+}
