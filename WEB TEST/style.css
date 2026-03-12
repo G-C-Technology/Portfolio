@@ -72,6 +72,11 @@ a:hover {
     margin: 20px auto;
 }
 
+.backbutton{
+    -ms-flex-item-align: start;
+    text-decoration: none;
+}
+
 button {
     border-radius: 20px;
     border: 1px solid var(--texto);
@@ -107,6 +112,7 @@ button:hover{
     position: absolute;
     top: 0;
     left: 0;
+    padding: 6px;
     width: 100%;
     box-sizing: border-box;
     display: flex;
