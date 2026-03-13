@@ -28,9 +28,12 @@ body {
 .contenedor {
     max-width: 600px; /* Ancho máximo del contenedor */
     padding: 40px;
-    margin: 0 auto; /* Centra horizontalmente el contenedor */
+    margin: 100px auto; /* Centra horizontalmente el contenedor */
     text-align: center;
     justify-content: center; /* Esta propiedad no es necesaria aquí, ya que justify-content se aplica a contenedores flexibles */
+    background-color: var(--fondo);
+    border-radius: 28px;
+    border: 2px solid var(--texto);
 }
 
 h1 {
@@ -72,9 +75,9 @@ a:hover {
     margin: 20px auto;
 }
 
-.backbutton{
-    -ms-flex-item-align: start;
-    text-decoration: none;
+.Botón-regresar-al-inicio{
+    padding: 6px;
+    position: absolute;
 }
 
 button {

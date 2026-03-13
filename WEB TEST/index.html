@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C&G Services</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cards.css">
 </head>
+
 <body>
-<div class="menu-panel" id="menupanelsuperior">
-    <button type="backbutton" id="backbutton"><a href="index.html">Back</a></button>
-    <button type="button" id="theme-toggle">Cambiar Modo</button>
-</div>   
+
+    <div class="menu-panel" id="menupanelsuperior">
+        <button type="button" id="theme-toggle">Cambiar Modo</button>
+    </div>
 
     <div class="contenedor">
         <h1>C&G Services</h1>
         <div class="separador"></div>
         <p>Bienvenido a nuestra pagina web de prueba en la que ofrecemos servicios de tecnología de vanguardia.</p>
-        
-        <nav class="enlaces">
-            <a href="4Formularios.html">Proyecto A</a>
-            <a href="#">Proyecto B</a>
-            <a href="#">Contacto</a>
-        </nav>
     </div>
+    <div class="separador"></div>
+    <h2 class="Subtitulo">PROYECTOS TRABAJADOS</h2>
+    <div class="separador"></div>
 
-<div class="Formularios de muestra">
-    
-</div>
-<script src="script.js"></script>
+        <div class="formularios-de-muestra">
+        <div class="cards-container">
+            <!-- Aquí las cards -->
+            <div class="card">
+                <img src="Image/banner c technology.png" alt="Card Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">4 Formularios</h2>
+                    <p class="card-description">Esta es una aplicación de gestión documental, utilizada para digitalizar un proceso manual con una app acorde a las necesidades del usuario.</p>
+                    <a href="4Formularios.html" class="card-button">Detalles</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Image/Gemini_Generated_Image_t22holt22holt22h.png" alt="Card Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">APP QR</h2>
+                    <p class="card-description">Aplicación móvil que permite escanear códigos QR, adaptable a sus necesidades. Enfocada inicialmente para la administración de personal.</p>
+                    <a href="#" class="card-button">Detalles</a>
+                </div>
+            </div>
+
+            <div class="cards-container">
+            <!-- Aquí las cards -->
+            <div class="card">
+                <img src="Image/banner c technology.png" alt="Card Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">EPP</h2>
+                    <p class="card-description">Aplicación para pedidos de equipo para personal. Utilizado tanto para realizar solicitudes como para consultar los documentos PDF generados para auditorias.</p>
+                    <a href="#" class="card-button">Detalles</a>
+                </div>
+            </div>
+            <!-- Agrega más cards-->
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
