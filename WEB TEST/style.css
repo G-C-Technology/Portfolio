@@ -77,7 +77,8 @@ a:hover {
 
 .Botón-regresar-al-inicio{
     padding: 6px;
-    position: absolute;
+    display: flex;
+    margin: 40px 0px;
 }
 
 button {
